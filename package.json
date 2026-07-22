@@ -33,7 +33,7 @@
     "test-headless": "yarn cypress run"
   },
   "keywords": [],
-  "author": "Neo4j Labs",
+  "author": "Neo4j Contrib",
   "dependencies": {
     "@azure/openai": "^1.0.0-beta.2",
     "@codemirror/lang-markdown": "^6.1.1",
