@@ -117,19 +117,6 @@ export const NeoWelcomeScreenModal = ({
             </Button>
           )}
 
-          <Tooltip title='View a gallery of live examples.' aria-label='demo' disableInteractive>
-            <Button
-              target='_blank'
-              href='https://neodash-gallery.graphapp.io'
-              style={{ marginTop: '10px', width: '100%' }}
-              fill='outlined'
-              color='neutral'
-              size='large'
-            >
-              Try a Demo
-            </Button>
-          </Tooltip>
-
           <Tooltip title='Show information about this application.' aria-label='' disableInteractive>
             <Button
               onClick={onAboutModalOpen}
