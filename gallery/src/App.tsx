@@ -43,124 +43,136 @@ function App() {
   );
 
   return (
-    <div className='n-bg-neutral-20 h-100'>
-      {/* <Alert
-        title='Deprecation notice'
-        type='warning'
-        // closeable={true}
-        icon={true}
-        // onClose={() => setBannerOpen(false)}
-      >
-        This app will no longer be available in the near future. &nbsp;
-        <u>
-          <b>
-            <a target='_blank' href='https://console-preview.neo4j.io/tools/dashboards'>
-              Migrate
-            </a>
-          </b>
-        </u>
-        &nbsp;your dashboards to the Neo4j Console, or{' '}
-        <u>
-          <b>
-            <a target='_blank' href='https://github.com/neo4j-labs/neodash'>
-              visit
-            </a>
-          </b>
-        </u>{' '}
-        the NeoDash repository to run NeoDash yourself.
-      </Alert> */}
-
-      {/* Header */}
-      <div className='n-bg-neutral-10'>
-        <div className='md:container md:mx-auto m-5 p-8 '>
-          <h3 className='flex item-center justify-center'>NeoDash Dashboard Gallery 🎨</h3>
-          <p className='flex item-center justify-center'>
-            This page contains a set of sample NeoDash dashboards built on public data.
-          </p>
-          <p className='flex item-center justify-center'>
-            This gallery is created and maintained by the NeoDash community.
-          </p>
-          <div className='flex item-center justify-center p-2'>
-            <TextInput
-              label=''
-              value={searchText}
-              onChange={(e) => setSearchText(e.target.value)}
-              leftIcon={<HeroIcon iconName='SearchIcon' />}
-              placeholder='Filter Dashboards...'
-              rightIcon={<HeroIcon className='n-cursor-pointer' iconName='XIcon' />}
-            />
-          </div>
-        </div>
-      </div>
-      {/* Grid */}
-      <div className='md:container md:mx-auto n-bg-neutral-00'>
-        <div className='grid grid-cols-3 grid-flow-row gap-2'>
-          {filteredList.map((item: Record<string, string>) => {
-            return (
-              <div className='m-4 n-bg-neutral-10 n-shadow-l4'>
-                <div className=''>
-                  <h4 className='p-3 float-right'>
-                    {item.language}
-                    {item.logo ? (
-                      <a target='_blank' href={item.authorURL}>
-                        <img style={{ width: 30 }} src={item.logo}></img>
-                      </a>
-                    ) : (
-                      <></>
-                    )}
-                  </h4>
-                  <h4 className='p-3'>{item.title}</h4>
-                  <p className='p-3'>
-                    {item.description}
-                    <br />
-                    <span className='n-text-neutral-70'>
-                      Author:{' '}
-                      <a className='underline' target='_blank' href={item.authorURL}>
-                        {item.author}
-                      </a>
-                    </span>
-                  </p>
-                  <span className='mx-2'>
-                    {`${item.keywords}`.split(' ').map((k) => (
-                      <Tag className='mx-1'>{k}</Tag>
-                    ))}
-                  </span>
-                  <img width='1000' height='350' className='p-3' src={item.image}></img>
-                  <div className='m-2 flex item-center justify-center'>
-                    <a target='_blank' href={item.url}>
-                      <Button>Load</Button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-        {list.length == 0 ? <p className='item-center flex justify-center n-text-neutral-60'> Loading... </p> : <></>}
-        {list.length != 0 && filteredList.length == 0 ? (
-          <p className='item-center flex justify-center n-text-neutral-60'> No results. </p>
-        ) : (
-          <></>
-        )}
-      </div>
-      {/* Footer */}
-      <div className='n-bg-neutral-10'>
-        <div className='md:container md:mx-auto m-5 p-8 '>
-          <p className='flex item-center justify-center n-text-neutral-60'>
-            Want to add a dashboard to this gallery? Check out the
-            <ul>
-              <a className='mx-1 underline' href='https://github.com/neo4j-labs/neodash/tree/master/gallery'>
-                Guidelines
-              </a>
-            </ul>
-            on GitHub.
-          </p>
-          <br />
-          <code className='flex item-center justify-center n-text-neutral-40'> {'-- neodash-gallery v0.2 --'} </code>
-        </div>
-      </div>
+    <div className='n-bg-neutral-20 h-screen flex flex-col items-center justify-center'>
+      <span>The NeoDash sample gallery has been deprecated.</span>
+      <span>
+        Check out the latest Neo4j dashboards&nbsp;
+        <a href='https://neo4j.com/docs/aura/dashboards/' className='text-blue-600 hover:text-blue-800 underline'>
+          here
+        </a>
+        .
+      </span>
     </div>
   );
+  // return (
+  //   <div className='n-bg-neutral-20 h-100'>
+  //     {/* <Alert
+  //       title='Deprecation notice'
+  //       type='warning'
+  //       // closeable={true}
+  //       icon={true}
+  //       // onClose={() => setBannerOpen(false)}
+  //     >
+  //       This app will no longer be available in the near future. &nbsp;
+  //       <u>
+  //         <b>
+  //           <a target='_blank' href='https://console-preview.neo4j.io/tools/dashboards'>
+  //             Migrate
+  //           </a>
+  //         </b>
+  //       </u>
+  //       &nbsp;your dashboards to the Neo4j Console, or{' '}
+  //       <u>
+  //         <b>
+  //           <a target='_blank' href='https://github.com/neo4j-contrib/neodash'>
+  //             visit
+  //           </a>
+  //         </b>
+  //       </u>{' '}
+  //       the NeoDash repository to run NeoDash yourself.
+  //     </Alert> */}
+
+  //     {/* Header */}
+  //     <div className='n-bg-neutral-10'>
+  //       <div className='md:container md:mx-auto m-5 p-8 '>
+  //         <h3 className='flex item-center justify-center'>NeoDash Dashboard Gallery 🎨</h3>
+  //         <p className='flex item-center justify-center'>
+  //           This page contains a set of sample NeoDash dashboards built on public data.
+  //         </p>
+  //         <p className='flex item-center justify-center'>
+  //           This gallery is created and maintained by the NeoDash community.
+  //         </p>
+  //         <div className='flex item-center justify-center p-2'>
+  //           <TextInput
+  //             label=''
+  //             value={searchText}
+  //             onChange={(e) => setSearchText(e.target.value)}
+  //             leftIcon={<HeroIcon iconName='SearchIcon' />}
+  //             placeholder='Filter Dashboards...'
+  //             rightIcon={<HeroIcon className='n-cursor-pointer' iconName='XIcon' />}
+  //           />
+  //         </div>
+  //       </div>
+  //     </div>
+  //     {/* Grid */}
+  //     <div className='md:container md:mx-auto n-bg-neutral-00'>
+  //       <div className='grid grid-cols-3 grid-flow-row gap-2'>
+  //         {filteredList.map((item: Record<string, string>) => {
+  //           return (
+  //             <div className='m-4 n-bg-neutral-10 n-shadow-l4'>
+  //               <div className=''>
+  //                 <h4 className='p-3 float-right'>
+  //                   {item.language}
+  //                   {item.logo ? (
+  //                     <a target='_blank' href={item.authorURL}>
+  //                       <img style={{ width: 30 }} src={item.logo}></img>
+  //                     </a>
+  //                   ) : (
+  //                     <></>
+  //                   )}
+  //                 </h4>
+  //                 <h4 className='p-3'>{item.title}</h4>
+  //                 <p className='p-3'>
+  //                   {item.description}
+  //                   <br />
+  //                   <span className='n-text-neutral-70'>
+  //                     Author:{' '}
+  //                     <a className='underline' target='_blank' href={item.authorURL}>
+  //                       {item.author}
+  //                     </a>
+  //                   </span>
+  //                 </p>
+  //                 <span className='mx-2'>
+  //                   {`${item.keywords}`.split(' ').map((k) => (
+  //                     <Tag className='mx-1'>{k}</Tag>
+  //                   ))}
+  //                 </span>
+  //                 <img width='1000' height='350' className='p-3' src={item.image}></img>
+  //                 <div className='m-2 flex item-center justify-center'>
+  //                   <a target='_blank' href={item.url}>
+  //                     <Button>Load</Button>
+  //                   </a>
+  //                 </div>
+  //               </div>
+  //             </div>
+  //           );
+  //         })}
+  //       </div>
+  //       {list.length == 0 ? <p className='item-center flex justify-center n-text-neutral-60'> Loading... </p> : <></>}
+  //       {list.length != 0 && filteredList.length == 0 ? (
+  //         <p className='item-center flex justify-center n-text-neutral-60'> No results. </p>
+  //       ) : (
+  //         <></>
+  //       )}
+  //     </div>
+  //     {/* Footer */}
+  //     <div className='n-bg-neutral-10'>
+  //       <div className='md:container md:mx-auto m-5 p-8 '>
+  //         <p className='flex item-center justify-center n-text-neutral-60'>
+  //           Want to add a dashboard to this gallery? Check out the
+  //           <ul>
+  //             <a className='mx-1 underline' href='https://github.com/neo4j-contrib/neodash/tree/master/gallery'>
+  //               Guidelines
+  //             </a>
+  //           </ul>
+  //           on GitHub.
+  //         </p>
+  //         <br />
+  //         <code className='flex item-center justify-center n-text-neutral-40'> {'-- neodash-gallery v0.2 --'} </code>
+  //       </div>
+  //     </div>
+  //   </div>
+  // );
 }
 
 export default App;
