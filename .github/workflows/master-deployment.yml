@@ -6,6 +6,7 @@ on:
 
 jobs:
   build-test:
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [18.x]
@@ -34,6 +35,7 @@ jobs:
           browser: chrome
   build-s3:
     needs: build-test
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [18.x]
@@ -57,6 +59,7 @@ jobs:
       - run: aws s3 rm s3://neodash.graphapp.io/ --recursive && aws s3 sync dist s3://neodash.graphapp.io/ --acl public-read
   build-docker:
     needs: build-test
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [18.x]
@@ -80,6 +83,7 @@ jobs:
           tags: ${{ secrets.DOCKER_HUB_LABS_USERNAME }}/neodash:latest,${{ secrets.DOCKER_HUB_LABS_USERNAME }}/neodash:2.4.11
   build-docker-legacy:
     needs: build-test
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [18.x]
@@ -102,6 +106,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/neodash:latest,${{ secrets.DOCKER_HUB_USERNAME }}/neodash:2.4.11
   deploy-gallery:
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [18.x]
@@ -122,6 +127,7 @@ jobs:
       - run: aws s3 rm s3://neodash-gallery.graphapp.io/ --recursive && aws s3 sync gallery/build s3://neodash-gallery.graphapp.io/ --acl public-read
   deploy-docs:
     needs: build-test
+    runs-on: ubuntu-latest
     steps:
       - name: Trigger Developer Event
         uses: peter-evans/repository-dispatch@main
@@ -131,6 +137,7 @@ jobs:
           event-type: labs
   build-npm:
     needs: build-test
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [18.x]
