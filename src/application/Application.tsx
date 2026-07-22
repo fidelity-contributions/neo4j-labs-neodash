@@ -147,7 +147,7 @@ const Application = ({
           &nbsp;your dashboards to the Neo4j Console, or{' '}
           <u>
             <b>
-              <a target='_blank' href='https://github.com/neo4j-labs/neodash'>
+              <a target='_blank' href='https://github.com/neo4j-contrib/neodash'>
                 visit
               </a>
             </b>

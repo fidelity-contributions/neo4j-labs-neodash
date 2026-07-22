@@ -76,7 +76,7 @@ export const NeoShareModal = ({ open, handleClose, connection }) => {
         intended as a way to publish your dashboard for users, see the&nbsp;
         <TextLink
           externalLink
-          href='https://github.com/neo4j-labs/neodash/tree/master/docs/modules/ROOT/pages/user-guide/publishing.adoc'
+          href='https://github.com/neo4j-contrib/neodash/tree/master/docs/modules/ROOT/pages/user-guide/publishing.adoc'
         >
           documentation
         </TextLink>{' '}

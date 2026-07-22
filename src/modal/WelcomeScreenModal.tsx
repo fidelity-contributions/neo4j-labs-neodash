@@ -155,7 +155,7 @@ export const NeoWelcomeScreenModal = ({
           <div style={{ color: 'white' }}>
             This version of NeoDash is not actively maintained. Visit the&nbsp;
             <TextLink
-              href='https://github.com/neo4j-labs/neodash'
+              href='https://github.com/neo4j-contrib/neodash'
               className='n-text-neutral-text-inverse'
               target='_blank'
               style={{ color: 'white' }}

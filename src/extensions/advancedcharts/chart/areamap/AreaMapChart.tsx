@@ -84,7 +84,7 @@ const NeoAreaMapChart = (props: ChartProps) => {
   }, [records, selection]);
 
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/neo4j-labs/neodash-static/main/world_polymap_level_0_entities.json')
+    fetch('https://raw.githubusercontent.com/neo4j-contrib/neodash-static/main/world_polymap_level_0_entities.json')
       .then((res) => res.json())
       .then((matched) => {
         let tmp = fromFeatureListToObject(matched.features, keyLengthToKeyName[keyLength]);
@@ -94,7 +94,7 @@ const NeoAreaMapChart = (props: ChartProps) => {
   }, [keyLength]);
 
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/neo4j-labs/neodash-static/main/world_polymap_level_1_entities.json')
+    fetch('https://raw.githubusercontent.com/neo4j-contrib/neodash-static/main/world_polymap_level_1_entities.json')
       .then((res) => res.json())
       .then((matched) => {
         let tmp = fromFeatureListToObject(matched.features, regionCodeName);

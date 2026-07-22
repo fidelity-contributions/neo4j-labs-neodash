@@ -72,12 +72,14 @@ export const NeoAboutButton = ({ connection, onAboutModalOpen, extensions }) => 
             onKeyDown={(e) =>
               enterHandler(e, () =>
                 openTab(
-                  'https://github.com/neo4j-labs/neodash/tree/master/docs/modules/ROOT/pages/user-guide/index.adoc'
+                  'https://github.com/neo4j-contrib/neodash/tree/master/docs/modules/ROOT/pages/user-guide/index.adoc'
                 )
               )
             }
             onClick={() =>
-              openTab('https://github.com/neo4j-labs/neodash/tree/master/docs/modules/ROOT/pages/user-guide/index.adoc')
+              openTab(
+                'https://github.com/neo4j-contrib/neodash/tree/master/docs/modules/ROOT/pages/user-guide/index.adoc'
+              )
             }
             title={'Documentation'}
             icon={<BookOpenIconOutline />}

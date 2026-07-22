@@ -16,7 +16,7 @@ You can add a new chart to NeoDash in three steps:
 . Make sure you have a local copy of NeoDash installed and running:
 
 ....
-git clone git@github.com:neo4j-labs/neodash.git
+git clone git@github.com:neo4j-contrib/neodash.git
 git checkout develop
 yarn install
 yarn run dev
@@ -97,5 +97,5 @@ Cypress testing.
 ____
 After you added a visualization or a new customization, consider
 contributing it to the NeoDash project by creating a
-https://github.com/neo4j-labs/neodash/pulls[Pull Request].
+https://github.com/neo4j-contrib/neodash/pulls[Pull Request].
 ____

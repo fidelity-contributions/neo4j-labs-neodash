@@ -62,7 +62,7 @@ dedicated read-only user for reporting.
 
 == 6. I’m missing a feature. Can I ask for help?
 Feature requests and bug reports are more than welcome. Please open an
-issue on https://github.com/neo4j-labs/neodash/issues[Github]. Issues
+issue on https://github.com/neo4j-contrib/neodash/issues[Github]. Issues
 will be addressed on a best-effort basis.
 
 If you’re looking for a specific feature with high priority, you can
@@ -72,7 +72,7 @@ reach out to the Neo4j team.
 
 NeoDash is an open-source tool that can be extended by anyone. If you
 are interested in contributing, please check out the
-https://github.com/neo4j-labs/neodash[Github repository].
+https://github.com/neo4j-contrib/neodash[Github repository].
 
 Aside from code contributions, we are also very happy to hear about how
 you use NeoDash. If you have a blog post, podcast or video of your graph

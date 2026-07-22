@@ -6,7 +6,7 @@ WORKDIR /usr/local/src/neodash
 
 # Pull source code if you have not cloned the repository
 #RUN apk add --no-cache git
-#RUN git clone https://github.com/neo4j-labs/neodash.git /usr/local/src/neodash
+#RUN git clone https://github.com/neo4j-contrib/neodash.git /usr/local/src/neodash
 
 # Copy sources and install/build
 COPY ./package.json /usr/local/src/neodash/package.json

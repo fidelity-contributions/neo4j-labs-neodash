@@ -19,7 +19,7 @@ ____
 
 To run the application in development mode: 
 
-- https://github.com/neo4j-labs/neodash[clone this repository.]
+- https://github.com/neo4j-contrib/neodash[clone this repository.]
 - open a terminal and navigate to the directory you just cloned. 
 - run `yarn install` to install the necessary dependencies. 
 - run `yarn run dev` to run the app in development mode. 
@@ -82,7 +82,7 @@ docker run -it –rm -p 5005:5005 neodash
 
 === To deploy using YAML files
 
-YAML examples are available in the https://github.com/neo4j-labs/neodash[NeoDash repository]. Here is an example of a pod definition YAML file to create a NeoDash pod in a cluster:
+YAML examples are available in the https://github.com/neo4j-contrib/neodash[NeoDash repository]. Here is an example of a pod definition YAML file to create a NeoDash pod in a cluster:
 
 ....
 apiVersion: v1
@@ -117,7 +117,7 @@ spec:
 
 === To deploy using a Helm Charts
 
-A Kubernetes Helm chart is available in the https://github.com/neo4j-labs/neodash[the NeoDash repository] and here is the full example of the Helm chart values.yaml file,
+A Kubernetes Helm chart is available in the https://github.com/neo4j-contrib/neodash[the NeoDash repository] and here is the full example of the Helm chart values.yaml file,
 
 ....
 # Name override or full name override

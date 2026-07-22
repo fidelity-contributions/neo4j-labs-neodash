@@ -5,7 +5,7 @@ import { NoDrawableDataErrorMessage } from '../../../../component/editor/CodeVie
 import { createUUID } from '../../../../utils/uuid';
 
 /**
- * Based on https://github.com/dekelpaz PR https://github.com/neo4j-labs/neodash/pull/191
+ * Based on https://github.com/dekelpaz PR https://github.com/neo4j-contrib/neodash/pull/191
  */
 const NeoGaugeChart = (props: ChartProps) => {
   const { records } = props;

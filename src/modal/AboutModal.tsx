@@ -78,7 +78,7 @@ export const NeoAboutModal = ({ open, handleClose, getDebugState }) => {
                 </TextLink>{' '}
                 for the map view. You can also extend NeoDash with your own visualizations. Check out the developer
                 guide in the{' '}
-                <TextLink target='_blank' href='https://github.com/neo4j-labs/neodash/'>
+                <TextLink target='_blank' href='https://github.com/neo4j-contrib/neodash/'>
                   project repository
                 </TextLink>
                 .
@@ -88,7 +88,7 @@ export const NeoAboutModal = ({ open, handleClose, getDebugState }) => {
               <SectionTitle>Contact</SectionTitle>
               <SectionContent>
                 For suggestions, feature requests and other feedback: create an issue on the&nbsp;
-                <TextLink target='_blank' href='https://github.com/neo4j-labs/neodash'>
+                <TextLink target='_blank' href='https://github.com/neo4j-contrib/neodash'>
                   GitHub repository
                 </TextLink>{' '}
                 , or the{' '}
