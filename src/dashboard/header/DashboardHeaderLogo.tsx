@@ -12,7 +12,7 @@ export const NeoDashboardHeaderLogo = ({ resetApplication }) => {
       <a className='n-cursor-pointer'>
         <img onClick={resetApplication} className='n-h-6 n-w-auto n-m-2' src={DASHBOARD_HEADER_BRAND_LOGO} alt='Logo' />
       </a>
-      {IS_CUSTOM_LOGO ? <></> : <Typography variant='h6'>Labs</Typography>}
+      {IS_CUSTOM_LOGO ? <></> : <Typography variant='h6'>Contrib</Typography>}
     </div>
   );
 

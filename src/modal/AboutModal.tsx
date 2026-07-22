@@ -84,24 +84,6 @@ export const NeoAboutModal = ({ open, handleClose, getDebugState }) => {
                 .
               </SectionContent>
             </Section>
-            <Section>
-              <SectionTitle>Contact</SectionTitle>
-              <SectionContent>
-                For suggestions, feature requests and other feedback: create an issue on the&nbsp;
-                <TextLink target='_blank' href='https://github.com/neo4j-contrib/neodash'>
-                  GitHub repository
-                </TextLink>{' '}
-                , or the{' '}
-                <TextLink
-                  href={
-                    'https://community.neo4j.com/t5/forums/filteredbylabelpage/board-id/integrations/label-name/neodash'
-                  }
-                >
-                  Neo4j Community Forums
-                </TextLink>
-                .
-              </SectionContent>
-            </Section>
           </div>
           <div className='n-flex n-flex-row n-justify-between n-mt-token-8'>
             <div>
